@@ -122,6 +122,7 @@ public class ControllerServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		out.println("This is the doPost() method!");
 		doGet(request, response);
+		response.sendRedirect("list");
 	}
 
 }
