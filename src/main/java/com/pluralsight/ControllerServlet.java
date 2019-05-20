@@ -111,7 +111,7 @@ public class ControllerServlet extends HttpServlet {
 	  throws ServletException, IOException {
 		int id = Integer.parseInt(request.getParameter("id"));
 		bookDAO.deleteBook(id);
-		response.sendRedirect("List");
+		response.sendRedirect("list");
 	}
 
 	/**
@@ -122,7 +122,6 @@ public class ControllerServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		out.println("This is the doPost() method!");
 		doGet(request, response);
-		response.sendRedirect("list");
 	}
 
 }
